@@ -8,8 +8,8 @@ export class MyChart extends Chart {
     const label = { app: 'nginx-k8s' };
     new KubeService(this, 'service', {
       spec: {
-        type: 'NodePort',
-        ports: [ { port: 80, targetPort: IntOrString.fromNumber(80), nodePort: 30082 } ],
+        type: 'ClusterIP',
+        ports: [{ port: 80, targetPort: IntOrString.fromNumber(80) }],
         selector: label
       }
     });
