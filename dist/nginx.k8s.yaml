@@ -4,7 +4,7 @@ metadata:
   name: nginx-service-c8cb96f8
 spec:
   ports:
-    - nodePort: 30080
+    - nodePort: 30082
       port: 80
       targetPort: 80
   selector:

@@ -9,7 +9,7 @@ export class MyChart extends Chart {
     new KubeService(this, 'service', {
       spec: {
         type: 'NodePort',
-        ports: [ { port: 80, targetPort: IntOrString.fromNumber(80), nodePort: 30080 } ],
+        ports: [ { port: 80, targetPort: IntOrString.fromNumber(80), nodePort: 30082 } ],
         selector: label
       }
     });
